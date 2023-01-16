@@ -1,4 +1,4 @@
-// TODO: Add code to display the current date in the header of the page.
+// adds tiem to the top of page
 var today = dayjs();
 $('#currentDay').text(today.format('dddd, MMMM D, YYYY'));
 
@@ -11,7 +11,7 @@ $(document).ready(function () {
 
 
   function timeblock() {
-    // obtains the hour of the day based on computer
+    // obtains the hour of the day 
     hour = moment().hours();
     console.log(hour);
 
@@ -35,7 +35,8 @@ $(document).ready(function () {
   }
 
   timeblock();
-  var interval = setInterval(timeblock, 15000);
+  // local storage
+  var interval = setInterval(timeblock, 7000);
   $("#hour-8 .description").val(localStorage.getItem("hour-8"));
   $("#hour-9 .description").val(localStorage.getItem("hour-9"));
   $("#hour-10 .description").val(localStorage.getItem("hour-10"));
