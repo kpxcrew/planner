@@ -45,7 +45,7 @@ Red signifies the present
 Green signifies the future
 
 ## Screenshots
-![Screenshot1](./assets/Screenshotplanner.png)
+![Screenshot1](./Assets/Screenshotplanner.png)
 
 ## Sources
 
