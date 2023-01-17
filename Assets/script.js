@@ -3,6 +3,7 @@ var today = dayjs();
 $('#currentDay').text(today.format('dddd, MMMM D, YYYY'));
 
 $(document).ready(function () {
+  //event listener for dave button
   $(".saveBtn").on("click", function (e) {
       let inputText = $(this).siblings(".description").val();
       let time = $(this).parent().attr("id");
@@ -17,7 +18,7 @@ $(document).ready(function () {
 
     $(".time-block").each(function () {
         var theHour= parseInt($(this).attr("id").split("-")[1]);
-
+        //provides the proper color coordination based on time 
         if (hour === theHour) {
           $(this).removeClass("past");
           $(this).removeClass("future");
