@@ -1,4 +1,4 @@
-// adds tiem to the top of page
+// adds time to the top of page
 var today = dayjs();
 $('#currentDay').text(today.format('dddd, MMMM D, YYYY'));
 
